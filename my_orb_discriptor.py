@@ -356,13 +356,10 @@ def get_pos_match(descriptor1,descriptor2,corners1,corners2):
             if(tmp < haming_min):
                 haming_min = tmp
                 cor2 = corners2[j]
-                # return_pair[i][2] = corners2[j][0]
-                # return_pair[i][3] = corners2[j][1]
+
         print(haming_min)
         if(haming_min>60):
             continue
         return_pair = np.vstack((return_pair, np.array([corners1[i][0], corners1[i][1], cor2[0], cor2[1]])))
-            # return_pair[i][0] = -1
-            # return_pair[i][1] = corners1[i][1]
         return_pair = np.array(return_pair)
     return return_pair

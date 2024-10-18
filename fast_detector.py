@@ -172,8 +172,8 @@ def my_fast(img, t=0.1, n=9):
     # return return_array
 
 
-image1 = cv2.imread('./Images/room1.png')
-image2 = cv2.imread('./Images/room2.png')
+image1 = cv2.imread('./Images/pic_test_1.png')
+image2 = cv2.imread('./Images/pic_test_2.png')
 image_miku_r = cv2.imread('./Images/miku2.png')
 
 
